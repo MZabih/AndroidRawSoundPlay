@@ -1,4 +1,4 @@
-package androidrawsoundplay;
+package cordova.plugins.resources.access;
 
 import android.app.Activity;
 import android.content.Context;
@@ -31,7 +31,7 @@ import static org.apache.cordova.media.AudioHandler.TAG;
  * This class echoes a string called from JavaScript.
  */
 
-public class AndroidRawSoundPlay extends CordovaPlugin {
+public class ResourcesAccess extends CordovaPlugin {
     public Activity activity;
     android.content.res.Resources res;
     public static MediaPlayer mediaPlayer;

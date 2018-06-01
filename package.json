@@ -1,9 +1,9 @@
 {
-  "name": "AndroidRawSoundPlay",
+  "name": "ResourcesAccess",
   "version": "0.0.1",
   "description": "This plugin will help to play sound from raw folder inside your android app",
   "cordova": {
-    "id": "cordova-plugin-android-raw-sound-play",
+    "id": "cordova-plugin-resources-access",
     "platforms": [
       "android",
       "ios"
