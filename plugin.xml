@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-android-raw-sound-play" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>AndroidRawSoundPlay</name>
+    <js-module name="AndroidRawSoundPlay" src="www/AndroidRawSoundPlay.js">
+        <clobbers target="cordova.plugins.AndroidRawSoundPlay" />
+    </js-module>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="AndroidRawSoundPlay">
+                <param name="android-package" value="androidrawsoundplay.AndroidRawSoundPlay" />
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml" />
+        <source-file src="src/android/AndroidRawSoundPlay.java" target-dir="src/cordova-plugin-android-raw-sound-play/AndroidRawSoundPlay" />
+    </platform>
+    <platform name="ios">
+        <config-file parent="/*" target="config.xml">
+            <feature name="AndroidRawSoundPlay">
+                <param name="ios-package" value="AndroidRawSoundPlay" />
+            </feature>
+        </config-file>
+        <source-file src="src/ios/AndroidRawSoundPlay.m" />
+    </platform>
+</plugin>
