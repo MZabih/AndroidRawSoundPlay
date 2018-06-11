@@ -48,7 +48,7 @@ public class ResourcesAccess extends CordovaPlugin {
             callbackContext.success(o);
             return true;
         }
-        else{
+        else if (action.equals("stopMediaPlayer")){
             this.stopMediaPlayer();
             return true;
         }
