@@ -6,4 +6,7 @@
   sound.listRaw = function ( success, error) {
       exec(success, error, 'ResourcesAccess', 'listRaw', []);
   };
+  sound.stopMediaPlayer = function ( success, error) {
+      exec(success, error, 'ResourcesAccess', 'stopMediaPlayer', []);
+  };
   module.exports = sound;

@@ -48,6 +48,10 @@ public class ResourcesAccess extends CordovaPlugin {
             callbackContext.success(o);
             return true;
         }
+        else{
+            this.stopMediaPlayer();
+            return true;
+        }
         return false;
     }
     protected void onCreate(Bundle savedInstanceState) {
@@ -74,5 +78,8 @@ public class ResourcesAccess extends CordovaPlugin {
         }
         mediaPlayer = MediaPlayer.create(context,resID);
         mediaPlayer.start();
+    }
+    private void stopMediaPlayer() {
+            mediaPlayer.stop();
     }
 }
