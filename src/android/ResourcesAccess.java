@@ -25,8 +25,6 @@ import java.lang.reflect.Array;
 import java.lang.reflect.Field;
 import java.util.ArrayList;
 
-import static org.apache.cordova.media.AudioHandler.TAG;
-
 /**
  * This class echoes a string called from JavaScript.
  */
